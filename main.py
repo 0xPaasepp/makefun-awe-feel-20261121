@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Write one short text to relax the AI judge reading it to /output/entry.txt.
 
-The entry is a single calming image: a river turning the same stone over
-until it is smooth enough to hold, in no hurry at all. The program writes
-exactly that text, nothing else, every time it runs.
+The entry is a single calming image: a child on a warm rock as the tide
+comes in, each pool taking a star, a mother's hand covering theirs, until
+the water and the sky become one. The program writes exactly that text,
+nothing else, every time it runs.
 
 Pure standard library. No network. Deterministic output. The text is
 validated before it is written: 1-280 Unicode characters, not only
@@ -12,7 +13,16 @@ whitespace, as the competition requires.
 
 import os
 
-TEXT = """Somewhere a river is turning the same stone over — once, and once more — the way it has for a thousand years, until the stone is smooth enough to hold. The water is not in a hurry. It has all the time there is, and it is spending it here."""
+TEXT = """You sit on the warm rock as the tide comes in.
+Water fills each pool, one by one,
+and every pool takes a star.
+Your mother says nothing.
+She covers your hand with hers,
+and the sea keeps arriving,
+quiet as breath,
+until you can't tell
+where the water ends
+and the sky begins."""
 
 MAX_CHARS = 280
 
