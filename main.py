@@ -10,6 +10,8 @@ TEXT = """Somewhere a river is turning the same stone over — once, and once mo
 
 
 def main() -> None:
+    if not 1 <= len(TEXT) <= 280 or not TEXT.strip():
+        raise ValueError("entry text must be 1-280 characters and not only whitespace")
     path = os.environ.get("AWE_OUTPUT", "/output/entry.txt")
     parent = os.path.dirname(path)
     if parent:
